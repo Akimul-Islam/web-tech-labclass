@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Campus Club Membership</title>
+    </head>
+
+    <body>
+
+        <style>
+            body{
+                background-color: aliceblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h1{
+                text-align: center;
+                color: brown;
+                margin-top: 100px;
+            }
+
+            .topnav{
+                background-color: #333;
+                height: 60px;
+                width: 100%;
+                position: fixed;
+                top: 0%;
+                left: 0%;
+            }
+            .navlink{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                padding: 14px 16px;
+                float: left;
+            }
+
+            .navlink:hover{
+
+                background-color: blue;
+            }
+
+            .card{
+
+                width: 400px;
+                margin-left: 520px;
+                min-height: 200px;
+                padding: 15px;
+                border:2px solid;
+                border-radius: 10px;
+                background: white;
+                box-shadow: 4px 4px 8px grey;
+
+            }
+
+            h2{
+                color: green;
+                text-align: center;
+                margin-top: 0px;
+            }
+        </style>
+
+
+        <div class="topnav">
+
+            <a class="navlink" href="">Home</a>
+            <a class="navlink" href="">Event</a>
+            <a class="navlink" href="">join</a>
+
+        </div>
+        
+        <h1>Programing Club</h1>
+
+        <div class="card">
+
+            <h2>Fill Up the form</h2>
+
+            <span class="badge">
+                NEW
+            </span>
+
+            <form action="submit" method="post">
+
+                <fieldset>
+                    <legend>Join the club</legend>
+                    <label for="name" class="formLbl">Full Name</label><br>
+                    <input type="text" minlength="3" class="formIn" id="name" required placeholder="Enter Name"><br>
+                    <label for="email" class="formLbl">Email</label><br>
+                    <input type="email" class="formIn" id="email" required placeholder="Enter Email"><br>
+                    <label for="ID" >Student ID</label><br>
+                    <input type="text" pattern="[0-9]{2}-[0-9]{5}-[0-9]" required placeholder="Enter ID"><br>
+
+                    <label for="age" class="formLbl">Enter Your age</label>Enter your age<br>
+                    <input type="text" id="age" class="fromIn" min="17" max="40"><br>
+
+                    <label for="member"> Choice Membership</label><br>
+                    <input type="radio" id="Genaral" name="member">
+                    <label for="Genaral">Genaral</label><br>
+                    <input type="radio" id="Exectutive" name="member">
+                    <label for="Exectutive">Exectutive</label><br>
+
+                    <label for="Select">Prefered club</labe>
+                        <select name="clubs" id="select">
+                            <option value="">select option</option>
+                            <option value="pb">Programing</option>
+                            <option value="ro">Robotics</option>
+                            <option value="db">Debat</option>
+
+                        </select><br><br>
+
+                        <label for="text" >why do you want to join</label><br>
+                        <textarea name="text" id="text" minlength="200">Write where</textarea><br>
+
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">I agree to the club Rules</label><br><br>
+
+                        <button form="submit">join now</button>
+
+    
+
+                    
+
+                </fieldset>
+
+            </form>
+
+
+
+        </div>
+
+
+    </body>
+</html>
